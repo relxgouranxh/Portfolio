@@ -36,19 +36,19 @@ const projects = [
     link: "https://github.com/relxgouranxh/Banking-System-using-OOPs-Java-"
   },
   {
-    title: "Library Management System (Java)",
-    description: "A Java-based system for managing books, borrowing, and returning functionality using file handling and classes.",
-    link: "https://github.com/relxgouranxh/Library-Management-System-Java"
+    title: "Tic-Tac-Toe-java",
+    description: "A simple 2-player Tic Tac Toe game made in Java (console-based). Learn turn-based logic, input validation, and game condition checking.",
+    link: "https://github.com/relxgouranxh/Tic-Tac-Toe-java"
   },
   {
-    title: "Student Record Manager",
-    description: "A console-based student management system built in Java, demonstrating encapsulation and data abstraction.",
-    link: "https://github.com/relxgouranxh/Student-Record-Manager"
+    title: "Hopping-Fibonacci",
+    description: "🐇 Java console app that simulates rabbit population growth using the Fibonacci sequence! 🌿 Each month shows rabbits visually with 🐇, highlights total population, and uses ...more for large numbers. Perfect beginner project to learn loops, conditions, and visualize real-life growth patterns. 🚀",
+    link: "https://github.com/relxgouranxh/Hopping-Fibonacci"
   },
   {
-    title: "Expense Tracker (Java)",
-    description: "A simple expense tracking tool created in Java using OOPs and file storage for managing daily expenses.",
-    link: "https://github.com/relxgouranxh/Expense-Tracker-Java"
+    title: "Quiz-file-handling",
+    description: "A simple Java-based quiz application that demonstrates file handling, user input, and object-oriented programming (OOP). This project reads questions from a file, displays them to the user in a multiple-choice format, takes input, and optionally stores the score or results — perfect for Java beginners learning how to work with files and basic data structures.",
+    link: "https://github.com/relxgouranxh/Quiz-file-handling"
   }
 ];
 
@@ -229,3 +229,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
   });
 });
+
