@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gouransh Bhandari | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Canvas for particle/glow background -->
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- NAV -->
+  <header>
+    <nav class="nav-wrap">
+      <h1 class="logo">Gouransh <span class="blue">Bhandari</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO / HOME -->
+  <section id="home" class="section hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <h2 class="intro">Hi, I'm</h2>
+        <h1 class="name">Gouransh <span class="blue glow">Bhandari</span></h1>
+        <h3 class="role">I am a <span id="role"></span></h3>
+        <p class="hero-desc">
+          Building efficient systems in Java & C++ · OOP | Algorithms | Clean Code.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn outline" href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="hero-right" aria-hidden="true">
+        <!-- stylized card mockup -->
+        <div class="card-mock">
+          <div class="card-header"></div>
+          <div class="card-body">
+            <div class="chip"></div>
+            <div class="lines">
+              <div class="l short"></div>
+              <div class="l medium"></div>
+              <div class="l long"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>
+          I'm a student and developer focused on Java and C++. I enjoy building
+          object-oriented systems, solving algorithmic problems, and writing clean code.
+        </p>
+        <p>
+          I work on console and GUI systems, file-handling utilities, and learning backend patterns.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><strong>Java</strong><span>Advanced</span></div>
+        <div class="stat"><strong>C++</strong><span>Intermediate</span></div>
+        <div class="stat"><strong>Algorithms</strong><span>Active</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <h2 class="section-title">My Projects</h2>
+    <div id="projectList" class="project-grid"></div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+    <p class="contact-desc">Reach out for collaboration or internship opportunities.</p>
+    <ul class="contact-list">
+      <li>Email: <a href="mailto:gouranshbhandari@gmail.com">gouranshbhandari@gmail.com</a></li>
+      <li>GitHub: <a href="https://github.com/relxgouranxh" target="_blank" rel="noopener">github.com/relxgouranxh</a></li>
+      <li>LinkedIn: <a href="#" target="_blank" rel="noopener">Your LinkedIn</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Gouransh Bhandari · Crafted with GSAP ✨</p>
+  </footer>
+
+  <!-- GSAP + ScrollTrigger CDN (core then plugin) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+  <!-- Your script -->
+  <script src="script.js"></script>
+</body>
+</html>
