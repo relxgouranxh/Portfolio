@@ -109,60 +109,84 @@ header {
   }
 }
 
-/* ========== HERO SECTION ========== */
+/* ========== HERO SECTION (FIXED) ========== */
 .hero {
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.95), var(--dark));
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   text-align: center;
-  padding: 140px 20px 80px;
+  padding: 0 20px;
+  position: relative;
 }
 
 .hero h2 {
   font-size: 1.4rem;
-  color: #aaa;
-  margin-bottom: 10px;
+  color: #f5f5f5;
+  margin-bottom: 20px;
 }
 
 .hero .glow {
   color: var(--blue);
-  font-size: 3.3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   text-shadow: 0 0 25px var(--blue);
-  margin-bottom: 15px;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
 }
 
 .hero p {
-  font-size: 1.2rem;
-  color: #ccc;
-  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #bbb;
+  margin-bottom: 40px;
+  line-height: 1.6;
 }
 
 .typing {
   color: var(--blue);
   font-weight: 600;
   font-size: 1.2rem;
+  display: block;
+  margin-top: 5px;
 }
 
 .btn {
   margin-top: 10px;
-  padding: 12px 30px;
+  padding: 12px 35px;
   border: 2px solid var(--blue);
   color: var(--blue);
   border-radius: 8px;
-  transition: 0.3s;
+  transition: 0.3s ease;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .btn:hover {
   background: var(--blue);
   color: var(--dark);
-  transform: scale(1.05);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 0 20px var(--blue);
+}
+
+/* Small screen fixes */
+@media (max-width: 768px) {
+  .hero .glow {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
 }
 
 /* ========== ABOUT SECTION ========== */
@@ -297,3 +321,4 @@ footer {
     flex-direction: column;
   }
 }
+
