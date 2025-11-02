@@ -109,9 +109,19 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
 
   <!-- Your script -->
-  <script src="script.js"></script>
+  <script src="script.js">
+window.addEventListener('scroll', () => {
+  const projects = document.querySelector('.project-grid');
+  const rect = projects.getBoundingClientRect();
+  if (rect.top < window.innerHeight - 100) {
+    projects.classList.add('visible');
+  }
+});
+
+  </script>
 </body>
 </html>
+
 
 
 
