@@ -1,129 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Gouransh Bhandari | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
-  <!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Orbitron:wght@600;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-  <!-- Canvas for particle/glow background -->
-  <canvas id="bgCanvas"></canvas>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gouransh <span>Bhandari</span></div>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  
-  <!-- ===== NAVBAR ===== -->
-<header>
-  <nav class="navbar">
-    <div class="logo">Gouransh <span>Bhandari</span></div>
-    <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    <ul class="nav-links" id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Hi, I'm</h2>
+      <h1 class="glow">Gouransh Bhandari</h1>
+      <p>Java Developer | C++ Programmer | Software Enthusiast</p>
+      <a href="#projects" class="btn">View My Projects</a>
+    </div>
+  </section>
 
-
-  <!-- HERO / HOME -->
-  <section id="home" class="section hero">
-    <div class="hero-inner">
-      <div class="hero-left">
-        <h2 class="intro">Hi, I'm</h2>
-        <h1 class="name">Gouransh <span class="blue glow">Bhandari</span></h1>
-        <h3 class="role">I am a <span id="role"></span></h3>
-        <p class="hero-desc">
-          Building efficient systems in Java & C++ · OOP | Algorithms | Clean Code.
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <div class="about-text">
+        <p>
+          I'm an undergraduate student passionate about crafting efficient software systems using <strong>Java</strong> and <strong>C++</strong>.  
+          My goal is to create scalable, well-structured programs and continuously enhance my problem-solving skills.
         </p>
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn outline" href="#contact">Contact</a>
-        </div>
+        <p>
+          I love exploring new technologies, contributing to open source, and improving through hands-on projects.
+        </p>
       </div>
-      <div class="hero-right" aria-hidden="true">
-        <!-- stylized card mockup -->
-        <div class="card-mock">
-          <div class="card-header"></div>
-          <div class="card-body">
-            <div class="chip"></div>
-            <div class="lines">
-              <div class="l short"></div>
-              <div class="l medium"></div>
-              <div class="l long"></div>
-            </div>
-          </div>
-        </div>
+      <div class="about-img">
+        <img src="relx.jpeg" alt="Gouransh Bhandari">
       </div>
     </div>
-    <div class="scroll-hint">↓</div>
   </section>
 
-  <!-- ===== ABOUT SECTION ===== -->
-<section id="about" class="about">
-  <div class="about-container">
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>
-        Hi, I'm <span>Gouransh Bhandari</span> — a passionate developer who loves building projects that combine creativity and logic.
-        I specialize in Java and Object-Oriented Programming and enjoy creating powerful and elegant solutions.
-      </p>
-      <p>
-        I’m constantly learning new technologies, exploring better ways to code, and aiming to make a meaningful impact through my projects.
-      </p>
-    </div>
-    <div class="about-img">
-      <img src="relx.jpeg" alt="Gouransh Bhandari">
-    </div>
-  </div>
-</section>
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Tic Tac Toe (Java)</h3>
+        <p>A simple 2-player Tic Tac Toe game built using Java OOP concepts.</p>
+        <a href="https://github.com/relxgouranxh/Tic-Tac-Toe-java" target="_blank">View on GitHub</a>
+      </div>
 
+      <div class="project-card">
+        <h3>Hopping Fibonacci</h3>
+        <p>Algorithmic project generating a Fibonacci-based sequence with custom hopping rules.</p>
+        <a href="https://github.com/relxgouranxh/Hopping-Fibonacci" target="_blank">View on GitHub</a>
+      </div>
 
-  <!-- PROJECTS -->
-  <section id="projects" class="section">
-    <h2 class="section-title">My Projects</h2>
-    <div id="projectList" class="project-grid"></div>
+      <div class="project-card">
+        <h3>Quiz (File Handling)</h3>
+        <p>Java-based quiz system demonstrating file I/O handling and data persistence.</p>
+        <a href="https://github.com/relxgouranxh/Quiz-file-handling" target="_blank">View on GitHub</a>
+      </div>
+    </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-    <p class="contact-desc">Reach out for collaboration or internship opportunities.</p>
-    <ul class="contact-list">
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Let’s connect for collaboration or internship opportunities!</p>
+    <ul>
       <li>Email: <a href="mailto:gouranshbhandari@gmail.com">gouranshbhandari@gmail.com</a></li>
-      <li>GitHub: <a href="https://github.com/relxgouranxh" target="_blank" rel="noopener">github.com/relxgouranxh</a></li>
-      <li>LinkedIn: <a href="https://www.linkedin.com/in/gouransh-bhandari-545001339?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener">Gouransh Bhandari</a></li>
+      <li>GitHub: <a href="https://github.com/relxgouranxh" target="_blank">github.com/relxgouranxh</a></li>
+      <li>LinkedIn: <a href="#" target="_blank">Your LinkedIn</a></li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Gouransh Bhandari ·</p>
+    <p>© 2025 Gouransh Bhandari | All Rights Reserved</p>
   </footer>
 
-  <!-- GSAP + ScrollTrigger CDN (core then plugin) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-  <!-- Your script -->
-  <script src="script.js">
-window.addEventListener('scroll', () => {
-  const projects = document.querySelector('.project-grid');
-  const rect = projects.getBoundingClientRect();
-  if (rect.top < window.innerHeight - 100) {
-    projects.classList.add('visible');
-  }
-});
-
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
