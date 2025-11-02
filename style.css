@@ -109,7 +109,7 @@ header {
   }
 }
 
-/* ========== HERO SECTION (FIXED) ========== */
+/* ========== HERO SECTION (CLEANED UP) ========== */
 .hero {
   height: 100vh;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.95), var(--dark));
@@ -134,29 +134,12 @@ header {
   font-size: 3.5rem;
   font-weight: 700;
   text-shadow: 0 0 25px var(--blue);
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   letter-spacing: 1px;
   animation: fadeUp 1.2s ease-in-out;
 }
 
-.hero p {
-  font-size: 1.1rem;
-  color: #bbb;
-  margin-bottom: 40px;
-  line-height: 1.6;
-  animation: fadeDown 1.4s ease-in-out;
-}
-
-.typing {
-  color: var(--blue);
-  font-weight: 600;
-  font-size: 1.2rem;
-  display: block;
-  margin-top: 5px;
-}
-
 .btn {
-  margin-top: 10px;
   padding: 12px 35px;
   border: 2px solid var(--blue);
   color: var(--blue);
@@ -190,11 +173,6 @@ header {
 @media (max-width: 768px) {
   .hero .glow {
     font-size: 2.5rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-    margin-bottom: 30px;
   }
 
   .btn {
