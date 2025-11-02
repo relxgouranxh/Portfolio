@@ -5,6 +5,14 @@ gsap.registerPlugin(ScrollTrigger);
 const roles = ["Java Developer", "C++ Enthusiast", "Student"];
 let roleIdx = 0, charIdx = 0;
 const roleEl = document.getElementById("role");
+// ===== NAVBAR TOGGLE =====
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
 
 function typeLoop(){
   const txt = roles[roleIdx];
@@ -229,4 +237,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     });
   });
 });
+
 
