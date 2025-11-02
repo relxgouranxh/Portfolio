@@ -39,17 +39,106 @@ body{
   pointer-events:none;
 }
 
-/* NAV */
-header{position:fixed;top:0;left:0;width:100%;z-index:40}
-.nav-wrap{
-  max-width:1150px;margin:12px auto;padding:8px 24px;display:flex;justify-content:space-between;align-items:center;
-  backdrop-filter: blur(6px);
+
+/* ===== NAVBAR ===== */
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
 }
-.logo{font-weight:700;font-size:20px;color:#dfe9f2}
-.logo .blue{color:var(--blue);text-shadow:0 0 18px rgba(0,188,212,0.18)}
-.nav-links{display:flex;gap:22px;list-style:none;margin:0;padding:0}
-.nav-links a{color:var(--muted);text-decoration:none;font-weight:600}
-.nav-links a:hover{color:var(--blue)}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  color: #fff;
+}
+
+.logo {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2196f3;
+}
+
+.logo span {
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #2196f3;
+}
+
+/* ===== Hamburger Button ===== */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 15px 25px;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background: rgba(10, 10, 10, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    transition: right 0.4s ease;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.3rem;
+  }
+  .nav-links {
+    width: 75%;
+  }
+}
+
 
 /* SECTIONS base */
 .section{padding:120px 24px;max-width:1150px;margin:0 auto;position:relative;z-index:2}
@@ -128,3 +217,4 @@ footer{text-align:center;padding:36px 12px;color:#7e8a94;font-size:14px}
 
 /* small flourish for scroll hint */
 .scroll-hint{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-size:22px;color:var(--blue);opacity:0.92}
+
